@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "397348605244",
+    "firebase_url": "https://dbfortest-de1b6.firebaseio.com",
+    "project_id": "dbfortest-de1b6",
+    "storage_bucket": "dbfortest-de1b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397348605244:android:9bd3bb345dfae0bf0a6239",
+        "android_client_info": {
+          "package_name": "com.example.dbfortest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397348605244-2jrbdoig330cte5snbimqeuuacea41kg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dbfortest",
+            "certificate_hash": "13301dd3df60ff6a46053652854e8a637411f959"
+          }
+        },
+        {
+          "client_id": "397348605244-cakf7rglhlou61fi8ciroou54c2a25cu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxyGCj1aIpIfW4BTZxr3qu-x4t2ljJO_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397348605244-cakf7rglhlou61fi8ciroou54c2a25cu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

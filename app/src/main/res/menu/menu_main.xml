@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/setting"
+        android:title="設定" />
+    <item
+        android:id="@+id/topic"
+        android:title="主題" />
+    <item
+        android:id="@+id/quenstion"
+        android:title="常見問題" />
+    <item
+        android:id="@+id/friend"
+        android:title="好友列表" />
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DBforTest</string>
+    <string name="取消">取消</string>
+    <string name="男性">男性</string>
+    <string name="女性">女性</string>
+
+    <string name="facebook_app_id">2332863756781877</string>
+    <string name="fb_login_protocol_scheme">fb2332863756781877</string>
+
+</resources>
