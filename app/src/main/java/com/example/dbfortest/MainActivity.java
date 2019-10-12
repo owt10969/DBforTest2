@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 myRef.child("True").setValue("中文");
                 System.out.println("===============================");
 
-                //GIT成功
+                //GIT成功 測試2
 
             }
         });
