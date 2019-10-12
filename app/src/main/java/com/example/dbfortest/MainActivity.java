@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 myRef.child("True").setValue("中文");
                 System.out.println("===============================");
 
-                //test的底下 →abc:"ABCCCC"
+                //GIT成功
 
             }
         });
