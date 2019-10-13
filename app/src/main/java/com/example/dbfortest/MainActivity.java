@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
+/**2019/10/13 斷腳隊長修**/
 public class MainActivity extends AppCompatActivity {
     private Button button,go;
 
@@ -30,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 DatabaseReference myRef = database.getReference("test");
                 myRef.child("True").setValue("中文");
                 System.out.println("===============================");
-
-                //GIT成功 測試2
-
             }
         });
 
