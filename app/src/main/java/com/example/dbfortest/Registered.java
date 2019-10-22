@@ -1,8 +1,10 @@
 package com.example.dbfortest;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,11 +19,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class Registered extends AppCompatActivity {
     public static final String GOOGLE_ACCOUNT ="";
@@ -217,4 +216,16 @@ public class Registered extends AppCompatActivity {
         myRef.child("Sexual").setValue(get_sex);
     }
 
+    public static class PersoninfoViewModel extends ViewModel {
+        private MutableLiveData<String> mText;
+
+        public PersoninfoViewModel() {
+            mText = new MutableLiveData<>();
+            mText.setValue("This is notifications fragment");
+        }
+
+        public LiveData<String> getText() {
+            return mText;
+        }
+    }
 }

@@ -6,63 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".mainView">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp">
-
-        <Button
-            android:id="@+id/homePage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="首頁" />
-
-        <Button
-            android:id="@+id/teamPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="組隊大廳" />
-
-        <Button
-            android:id="@+id/talk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="聊天室" />
-
-        <Button
-            android:id="@+id/userInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="個人資訊" />
-    </LinearLayout>
-
     <com.youth.banner.Banner
         android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
     </com.youth.banner.Banner>
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="522dp"
+        android:layout_width="399dp"
+        android:layout_height="491dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/teamPage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/banner">
@@ -74,8 +34,8 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/id_recyclerview_horizontal2"
-                android:layout_width="fill_parent"
-                android:layout_height="300dp"
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
                 android:layout_centerVertical="true"
                 android:background="#FFFFFF"
                 android:scrollbars="none">
@@ -102,4 +62,13 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/teamPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="組隊大廳"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

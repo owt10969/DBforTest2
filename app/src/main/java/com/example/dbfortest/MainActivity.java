@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-/**2019/10/13 斷腳隊長修**/
+/**2019/10/21 斷腳隊長修**/
 public class MainActivity extends AppCompatActivity {
     private Button button,go;
 

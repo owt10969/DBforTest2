@@ -52,7 +52,7 @@ public class mainView extends AppCompatActivity implements OnBannerListener {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(mainView.this,team.class);
+                intent.setClass(mainView.this,teamView.class);
                 startActivity(intent);
             }
         });
