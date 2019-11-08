@@ -35,7 +35,7 @@ import org.json.JSONObject;
 import java.util.Arrays;
 
 public class login extends AppCompatActivity {
-    private Button goRe;
+    private Button goRe,goMain;
     private static final String TAG = FacebookActivity.class.getSimpleName();
     CallbackManager callbackManager;
     private AccessTokenTracker accessTokenTracker;
@@ -56,6 +56,7 @@ public class login extends AppCompatActivity {
     }
     private void initView(){
         goRe=findViewById(R.id.button3);
+        goMain=findViewById(R.id.button4);
     }
     private void setListeners(){
         goRe.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +67,15 @@ public class login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+       goMain.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent =new Intent();
+               intent.setClass(login.this,mainView.class);
+               startActivity(intent);
+           }
+       });
+
     }
     private void FaceBookLogin() {
         callbackManager = CallbackManager.Factory.create();
